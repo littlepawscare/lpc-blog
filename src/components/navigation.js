@@ -1,15 +1,15 @@
 import React from 'react'
-import { Link } from 'gatsby'
 
 import * as styles from './navigation.module.css'
+import logo from '../images/LPC_logo.png';
 
 const Navigation = () => (
   <nav role="navigation" className={styles.container} aria-label="Main">
-    <Link to="/" className={styles.logoLink}>
-      <span className={styles.logo} />
-      <span className={styles.navigationItem}>Gatsby Starter Contentful</span>
-    </Link>
-    <ul className={styles.navigation}>
+    <a href="https://littlepawscare.com" className={styles.logoLink}>
+      <img src={logo} alt="Little Paws Care Logo" className={styles.logo} />
+      <span className={styles.navigationItem}>Little Paws Care</span>
+    </a>
+    {/* <ul className={styles.navigation}>
       <li className={styles.navigationItem}>
         <Link to="/" activeClassName="active">
           Home
@@ -20,7 +20,7 @@ const Navigation = () => (
           Blog
         </Link>
       </li>
-    </ul>
+    </ul> */}
   </nav>
 )
 
